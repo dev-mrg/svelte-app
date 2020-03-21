@@ -1,10 +1,12 @@
 <script>
 	export let name;
+	import Com from './com.svelte';
 </script>
 
 <main>
 	<h1>Hello {name}!</h1>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<Com/>
 </main>
 
 <style>
