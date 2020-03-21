@@ -1,13 +1,16 @@
 <script>
-	export let name;
-	import Com from './com.svelte';
-	import Com2 from './comtwo.svelte';
+
+import Com from './com.svelte';
+import Comtwo from './comtwo.svelte';
+import Stuff from './main.svelte';
 </script>
 
 <main>
+<Stuff/>
 
-	<Com/>
-	<Com2/>
+<Com/>
+<Comtwo/>
+
 </main>
 
 <style>
@@ -31,3 +34,6 @@
 		}
 	}
 </style>
+
+
+

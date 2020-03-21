@@ -23,10 +23,17 @@ function tog(){
     height: 7vh;
 }
 
+#exp{
+    z-index: 100;
+    position: absolute;
+    left:40%;
+    top:10%;
+}
+
 #loader {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 250px;
     z-index: 1;
     width: 150px;
     height: 150px;
@@ -36,29 +43,18 @@ function tog(){
     border-top: 16px solid #3498db;
     width: 120px;
     height: 120px;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
+    animation: spin 4s linear infinite;
     display:none;
-}
-/* Safari */
-@-webkit-keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
 }
 
 @keyframes spin {
     0% {
-        transform: rotate(0deg) rotateY(0deg);
+        transform: rotate(0deg) rotateX(0deg);
         
     }
 
     100% {
-        transform: rotate(360deg) rotateY(360deg);
+        transform: rotate(360deg) rotateX(360deg);
        
     }
 }
@@ -66,7 +62,7 @@ function tog(){
 </style>
 
 
-<div class="exp">
+<div id="exp">
 <p class="toggle">WTF MF!!</p>
 <div id="loader"></div>
 <button id="bt"on:click={tog}>Push</button>
