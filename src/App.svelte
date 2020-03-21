@@ -1,7 +1,7 @@
 <script>
 	export let name;
 	import Com from './com.svelte';
-	import Com2 from './com2.svelte';
+	import Com2 from './comtwo.svelte';
 </script>
 
 <main>
