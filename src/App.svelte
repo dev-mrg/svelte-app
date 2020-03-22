@@ -12,7 +12,8 @@ const youMama = "I Dont Know? ";
 
 <main>
 <Stuff/>
-<P1/><P2/><P3/>
+<div>
+<P1/><P2/><P3/></div>
 <Com exp={youMama} />
 <Comtwo name={'asshole'}/>
 
