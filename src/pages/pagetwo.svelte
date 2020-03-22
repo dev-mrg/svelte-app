@@ -9,23 +9,22 @@ function p2(){
 </script>
 
 <style>
-#page2-cont{
-    width:80vw;
+/* #page2-cont{
+    width:100vw;
     height:100vh;
     position:absolute;
     background:rgba(55,55,55,1);
     top:0;
-    left:10vw;
     display:flex;
     justify-content: space-around;
-    z-index: 9;
-}
+    z-index: 5;
+} */
 
 #p2b{
     position:absolute;
     background:rgb(70, 70, 27);
      border:none;
-    left:110px;
+    left:15vw;
     top:15px;
     width:5vw;
     height:4vh;
@@ -35,6 +34,7 @@ function p2(){
     width:80vw;
     height:90vh;
     position:absolute;
+    left:10vw;
     background:rgb(70, 70, 27);
     top:50px;
     display:none;
@@ -46,7 +46,7 @@ function p2(){
 
 
 <div id="page2-cont">
-<button id="p2b" on:click={p2}>TAB2</button>
+<a href="#page2" id="p2b" on:click={p2}>TAB2</a>
 <div id="page2" class="page">
 <p>Ima Greenish Page</p>
 </div>

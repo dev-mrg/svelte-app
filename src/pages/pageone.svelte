@@ -8,21 +8,21 @@ function p1(){
 </script>
 
 <style>
-#page1-cont{
-    width:80vw;
+/* #page1-cont{
+    width:100vw;
     height:100vh;
     position:absolute;
     background:rgba(55,55,55,1);
     top:0;
-    left:10vw;
     display:flex;
     justify-content: space-around;
-}
+    z-index: 0;
+} */
 
 #p1b{
     position:absolute;
     background:rgb(211, 70, 27);
-    left:20px;
+     left:10vw;
     border:none;
     top:15px;
     width:5vw;
@@ -35,6 +35,7 @@ function p1(){
     position:absolute;
     background:rgb(211, 70, 27);
     top:50px;
+      left:10vw;
     display:none;
     justify-content: space-around;
      z-index: 10;
@@ -44,7 +45,7 @@ function p1(){
 
 
 <div id="page1-cont">
-<button id="p1b" on:click={p1}>TAB1</button>
+<a href="#page1" id="p1b" on:click={p1}>TAB1</a>
 <div id="page1" class="page">
 <p>Ima Redish Page</p>
 </div>

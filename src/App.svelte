@@ -6,8 +6,9 @@ import Stuff from './main.svelte';
 import P1 from './pages/pageone.svelte';
 import P2 from './pages/pagetwo.svelte';
 import P3 from './pages/pagethree.svelte';
-const youMama = "HOOKER!";
+const youMama = "I Dont Know? ";
 </script>
+
 
 <main>
 <Stuff/>
@@ -21,14 +22,11 @@ const youMama = "HOOKER!";
 
 <style>
 	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
+		width:100vw;
+		height:100vh;
+		position: absolute;
+
 	}
-
-
-
 	@media (min-width: 640px) {
 		main {
 			max-width: none;
