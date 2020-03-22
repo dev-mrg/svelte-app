@@ -1,5 +1,5 @@
 <script>
-const name = 'asshole';
+export let name;
 
 </script>
 <style>

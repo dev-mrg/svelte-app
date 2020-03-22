@@ -1,6 +1,7 @@
 
 
 <script>
+export let exp;
 import jQuery from 'jquery';
 const j$ = jQuery;
 
@@ -63,7 +64,7 @@ function tog(){
 
 
 <div id="exp">
-<p class="toggle">WTF MF!!</p>
+<p class="toggle">{exp}</p>
 <div id="loader"></div>
 <button id="bt"on:click={tog}>Push</button>
 
