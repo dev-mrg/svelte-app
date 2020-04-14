@@ -11,7 +11,7 @@ function p3(){
 }
 </script>
 
-<style>
+<style> 
 
 #p3b{
      background:rgb(25, 70, 227);
