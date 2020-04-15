@@ -23,6 +23,19 @@ html, body {
 	justify-content: space-around;
 	z-index: 10;
 }
+
+.child{
+	display:none;
+	position:absolute;
+	top:100px;
+	left:100px;
+	width:30vw;
+	height:20vh;
+	background:black;
+	display:none;
+	z-index: 11;
+
+}
 body {
 	color: #333;
 	margin: 0;

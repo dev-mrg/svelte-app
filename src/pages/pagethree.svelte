@@ -1,14 +1,7 @@
 <script>
-import "/public/global";
-import jQuery from 'jquery';
-const j$ = jQuery;
-function p3(){
-  
-    j$('.page').hide();
-     j$('#page3').show();
-    j$('.tab').css('z-index','3');
-    j$('#p3b').css('z-index','10');
-}
+
+import {routes} from "../router/myrouter";
+
 </script>
 
 <style> 
@@ -26,7 +19,7 @@ function p3(){
 
 
 <div id="page3-cont">
-<a href="#page3" id="p3b" class='tab' on:click={p3}>TAB3</a>
+<a href="#page3" id="p3b" class='tab' on:click={routes}>TAB3</a>
 <div id="page3" class="page">
 <p>Ima Blusish Page</p>
 </div>
