@@ -12,11 +12,10 @@ import Back from "./Back.svelte";
 }
 
 
+
 </style>
 
 
-<div id="page1-cont">
-<!-- <a href="#page1" id="p1b" class='tab' on:click={routes}>TAB1</a> -->
 <div id="page1" class="page">
 <Back/>
 <p>Ima Redish Page</p>
@@ -25,6 +24,5 @@ import Back from "./Back.svelte";
 <a id="p1c2" class="child-tab" href="#child2" on:click={childRoute}>Imachild</a>
 <div id="child1" class="child">Child 1 here  </div>
 <div id="child2" class="child">Child 2 here  </div>
-</div>
 </div>
 </div>

@@ -14,11 +14,7 @@ import Back from "./Back.svelte";
 
 </style>
 
-
-<div id="page3-cont">
-<!-- <a href="#page3" id="p3b" class='tab' on:click={routes}>TAB3</a> -->
 <div id="page3" class="page">
 <Back/>
 <p>Ima Blusish Page</p>
-</div>
 </div>

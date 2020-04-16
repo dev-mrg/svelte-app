@@ -3,9 +3,20 @@
   import P1 from "./pages/pageone.svelte";
   import P2 from "./pages/pagetwo.svelte";
   import P3 from "./pages/pagethree.svelte";
+  import A1 from "./pages/auth/Authpage.svelte";
   import Back from "./pages/Back.svelte";
-  import { routes } from "./router/myrouter.js";
+  import { loggedin, loggedout, routes } from "./router/myrouter.js";
   const sometext = "I Dont Know? ";
+
+
+//   function loggedin() {
+//   document.getElementById("in").checked = true;
+//    document.getElementById("out").checked = false;
+// }
+// function loggedout() {
+//     document.getElementById("in").checked = false;
+//    document.getElementById("out").checked = true;
+// }
 </script>
 
 <style>
@@ -32,12 +43,22 @@
 <body>
 <div class="full">
   <div class="navbar">
-    <a href="#page1" id="p1b" class="tab" on:click={routes}>TAB1</a>
-    <a href="#page2" id="p2b" class="tab" on:click={routes}>TAB2</a>
-    <a href="#page3" id="p3b" class="tab" on:click={routes}>TAB3</a>
+  <div>
+  <form>
+    <input type="radio" name="loggedin" id="in">log in<br>
+  <input type="radio" name="loggedout" id="out">log out
+  </form>
+  <button on:click={loggedin}>log in </button>
+<button on:click={loggedout}>log out</button>
+  </div>
+    <a href="#auth" id="a1" class="tab" on:click={routes}>Auth</a>
+    <a href="#page1" id="p1b" class="tab" on:click={routes}>Page1</a>
+    <a href="#page2" id="p2b" class="tab" on:click={routes}>Page2</a>
+    <a href="#page3" id="p3b" class="tab" on:click={routes}>Page3</a>
   </div>
 
   <div id="pages">
+  <A1/>
     <P1 />
     <P2 />
     <P3 />

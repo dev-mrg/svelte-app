@@ -35,21 +35,20 @@ body{
   }
 
   #pages{
-	  max-height:80vh;
+	  max-height:90vh;
 	  margin-top:10vh;
 	  overflow:hidden;
 	  display:flex;
+	  justify-content: space-around;;
 	  /* padding:10px; */
   }
 
 .page{
 	width:80vw;
-	height:120vh;
-	position:absolute;
-
+	min-height:90vh;
+	height:auto;
 	display:none;
-	left:10vw;
 	justify-content: space-around;
 	z-index: 10;
-	overflow-y:auto;
+	
 } 

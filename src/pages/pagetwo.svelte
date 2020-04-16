@@ -14,9 +14,6 @@ import Back from "./Back.svelte";
 
 </style>
 
-
-<div id="page2-cont">
-<!-- <a href="#page2" id="p2b" class='tab' on:click={routes}>TAB2</a> -->
 <div id="page2" class="page">
 <Back/>
 <p>Ima Greenish Page</p>
@@ -39,5 +36,4 @@ import Back from "./Back.svelte";
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quis iusto harum quia itaque minus unde aspernatur vel deserunt nostrum dolorum sint nulla veritatis commodi recusandae, facilis officiis accusantium ducimus?</p>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quis iusto harum quia itaque minus unde aspernatur vel deserunt nostrum dolorum sint nulla veritatis commodi recusandae, facilis officiis accusantium ducimus?</p>
 
-</div>
 </div>
