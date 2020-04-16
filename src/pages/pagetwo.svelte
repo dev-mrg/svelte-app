@@ -1,17 +1,11 @@
 <script>
 // import {routes} from "./../router/myrouter.js";
-import {routes} from "../router/myrouter";
+import Back from "./Back.svelte";
 </script>
 
 <style>
 
-#p2b{
 
-    background:rgb(70, 70, 27);
-
-    left:15vw;
-
-}
 #page2{
 
     background:rgb(70, 70, 27);
@@ -22,8 +16,28 @@ import {routes} from "../router/myrouter";
 
 
 <div id="page2-cont">
-<a href="#page2" id="p2b" class='tab' on:click={routes}>TAB2</a>
+<!-- <a href="#page2" id="p2b" class='tab' on:click={routes}>TAB2</a> -->
 <div id="page2" class="page">
+<Back/>
 <p>Ima Greenish Page</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quis iusto harum quia itaque minus unde aspernatur vel deserunt nostrum dolorum sint nulla veritatis commodi recusandae, facilis officiis accusantium ducimus?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quis iusto harum quia itaque minus unde aspernatur vel deserunt nostrum dolorum sint nulla veritatis commodi recusandae, facilis officiis accusantium ducimus?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quis iusto harum quia itaque minus unde aspernatur vel deserunt nostrum dolorum sint nulla veritatis commodi recusandae, facilis officiis accusantium ducimus?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quis iusto harum quia itaque minus unde aspernatur vel deserunt nostrum dolorum sint nulla veritatis commodi recusandae, facilis officiis accusantium ducimus?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quis iusto harum quia itaque minus unde aspernatur vel deserunt nostrum dolorum sint nulla veritatis commodi recusandae, facilis officiis accusantium ducimus?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quis iusto harum quia itaque minus unde aspernatur vel deserunt nostrum dolorum sint nulla veritatis commodi recusandae, facilis officiis accusantium ducimus?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quis iusto harum quia itaque minus unde aspernatur vel deserunt nostrum dolorum sint nulla veritatis commodi recusandae, facilis officiis accusantium ducimus?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quis iusto harum quia itaque minus unde aspernatur vel deserunt nostrum dolorum sint nulla veritatis commodi recusandae, facilis officiis accusantium ducimus?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quis iusto harum quia itaque minus unde aspernatur vel deserunt nostrum dolorum sint nulla veritatis commodi recusandae, facilis officiis accusantium ducimus?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quis iusto harum quia itaque minus unde aspernatur vel deserunt nostrum dolorum sint nulla veritatis commodi recusandae, facilis officiis accusantium ducimus?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quis iusto harum quia itaque minus unde aspernatur vel deserunt nostrum dolorum sint nulla veritatis commodi recusandae, facilis officiis accusantium ducimus?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quis iusto harum quia itaque minus unde aspernatur vel deserunt nostrum dolorum sint nulla veritatis commodi recusandae, facilis officiis accusantium ducimus?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quis iusto harum quia itaque minus unde aspernatur vel deserunt nostrum dolorum sint nulla veritatis commodi recusandae, facilis officiis accusantium ducimus?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quis iusto harum quia itaque minus unde aspernatur vel deserunt nostrum dolorum sint nulla veritatis commodi recusandae, facilis officiis accusantium ducimus?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quis iusto harum quia itaque minus unde aspernatur vel deserunt nostrum dolorum sint nulla veritatis commodi recusandae, facilis officiis accusantium ducimus?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quis iusto harum quia itaque minus unde aspernatur vel deserunt nostrum dolorum sint nulla veritatis commodi recusandae, facilis officiis accusantium ducimus?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quis iusto harum quia itaque minus unde aspernatur vel deserunt nostrum dolorum sint nulla veritatis commodi recusandae, facilis officiis accusantium ducimus?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quis iusto harum quia itaque minus unde aspernatur vel deserunt nostrum dolorum sint nulla veritatis commodi recusandae, facilis officiis accusantium ducimus?</p>
+
 </div>
 </div>
