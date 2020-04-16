@@ -27,11 +27,6 @@
     font-size:1.5rem;
     text-decoration: none;
   }
-  @media (min-width: 640px) {
-    main {
-      max-width: none;
-    }
-  }
 </style>
 
 <body>
