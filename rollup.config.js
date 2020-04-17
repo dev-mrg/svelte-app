@@ -1,4 +1,5 @@
 import svelte from 'rollup-plugin-svelte';
+import jQuery from 'jquery';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import livereload from 'rollup-plugin-livereload';
@@ -12,7 +13,8 @@ export default {
 		sourcemap: true,
 		format: 'iife',
 		name: 'app',
-		file: 'public/build/bundle.js'
+		file: 'public/build/bundle.js',
+	
 	},
 	plugins: [
 		svelte({
@@ -52,6 +54,8 @@ export default {
 		clearScreen: false
 	}
 };
+
+
 
 function serve() {
 	let started = false;
