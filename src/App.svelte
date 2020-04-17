@@ -5,7 +5,7 @@
   import P3 from "./pages/pagethree.svelte";
   import A1 from "./pages/auth/Authpage.svelte";
   import Back from "./pages/Back.svelte";
-  import { loggedin, loggedout, routes } from "./router/myrouter.js";
+  import { loggedin, loggedout, routes} from "./router/myrouter.js";
   const sometext = "I Dont Know? ";
 
 
@@ -22,7 +22,16 @@
 <style>
 
 
-
+  #pages{
+	  max-height:90vh;
+	  margin-left:-20vw;
+	  margin-top:10vh;
+	  overflow:hidden;
+	  display:flex;
+	  justify-content: space-around;;
+	  overflow-x:hidden;
+	  /* padding:10px; */
+  }
   .tab {
     position: relative;
 	   color:white;
@@ -45,8 +54,8 @@
   <div class="navbar">
   <div>
   <form>
-    <input type="radio" name="loggedin" id="in">log in<br>
-  <input type="radio" name="loggedout" id="out">log out
+    <input disabled="true" type="radio" name="loggedin" id="in">log in<br>
+  <input disabled="true" type="radio" name="loggedout" id="out">log out
   </form>
   <button on:click={loggedin}>log in </button>
 <button on:click={loggedout}>log out</button>
@@ -55,13 +64,16 @@
     <a href="#page1" id="p1b" class="tab" on:click={routes}>Page1</a>
     <a href="#page2" id="p2b" class="tab" on:click={routes}>Page2</a>
     <a href="#page3" id="p3b" class="tab" on:click={routes}>Page3</a>
+
   </div>
 
   <div id="pages">
+<Back/>
   <A1/>
     <P1 />
     <P2 />
     <P3 />
+
   </div>
   <Com exp={sometext} />
   </div>

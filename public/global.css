@@ -34,14 +34,7 @@ body{
     justify-content: space-around;
   }
 
-  #pages{
-	  max-height:90vh;
-	  margin-top:10vh;
-	  overflow:hidden;
-	  display:flex;
-	  justify-content: space-around;;
-	  /* padding:10px; */
-  }
+
 
 .page{
 	width:80vw;
@@ -52,3 +45,4 @@ body{
 	z-index: 10;
 	
 } 
+

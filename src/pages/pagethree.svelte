@@ -1,8 +1,3 @@
-<script>
-
-import {routes} from "../router/myrouter";
-import Back from "./Back.svelte";
-</script>
 
 <style> 
 
@@ -15,6 +10,6 @@ import Back from "./Back.svelte";
 </style>
 
 <div id="page3" class="page">
-<Back/>
+
 <p>Ima Blusish Page</p>
 </div>

@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "jquery": "^3.5.0",
+    "jquery-ui": "^1.12.1",
     "sirv-cli": "^0.4.5"
   }
 }
