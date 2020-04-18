@@ -14,6 +14,7 @@ var circles = [];
 var x = w / 2,
     y = h / 2;
 var smallIncUp = 1.1;
+ var interact = false;
 var smallIncDown = smallIncUp * 3.63;
 var rot = 1;
 var sizeE = 50;
@@ -133,6 +134,7 @@ planet()
 setupCircles();
 
 function anim() {
+    if(interact){
     var startH = 10;
     var startW = startH * 1.08;
     var sX = w / 2 - startW / 2;
@@ -148,15 +150,29 @@ function anim() {
     pTwo.update();
 
     requestAnimationFrame(anim);
+    }
 
 }
+
+    c.addEventListener("mouseover", function(e) {
+     
+      interact = true;
+      anim();
+    });
+
+    c.addEventListener("mouseout", function(e) {
+      interact = false;
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle="black";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+    });
 });
 </script>
 
 <style>
 #c{
-    width:40vw;
-    height:20vh;
+    width:100%;height:150%;
+    margin-bottom:100px;
 }
 
 #page1{

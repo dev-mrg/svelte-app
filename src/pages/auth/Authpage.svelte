@@ -16,10 +16,10 @@ canvas2.width = .0001;
 canvas2.height = .0001;
 var cellWidth = 1 / (gridSize) * canvas.width + 1.5;
 var cellHeight = 1 / (gridSize) * canvas.height + 1.5;
-canvas.width = innerWidth;
+canvas.width = innerWidth-300;
 canvas.height = innerHeight;
-var w = innerWidth;
-var h = innerHeight;
+var w = innerWidth/5;
+var h = innerHeight/5;
 var mf = Math.floor;
 var mouseX, mouseY, mouseInteract;
 var interact = false;
@@ -41,11 +41,13 @@ cellsPack();
 
 var colors = [];
 
-for (var color = -10; color < 255; color++) {
-    var color3 = color/3;
+for (var color = 0; color < 255; color++) {
+    var color3 = color/10;
     // var rCol = random(0, 255);
-    var cc = 'rgb(' +0+','+0+','+color+ ')';
+    var cc = `rgb(${color},0,0)`;
+     var cd = `rgb(${color},${color},0)`;
       colors.push(cc);
+    //   colors.push(cd);
     // colors.push('rgb(0,0,'+rCol+')')
     //  colors.push('rgb('+rCol/2+',0,0)')
      // colors.push('rgb(0,'+rCol/8+',0)')
@@ -63,12 +65,12 @@ for (var i = 0; i < gridSize; i++) {
                 checkCell = true;
         cells.push({
             height: checked(),
-            velocity: 0
+            velocity: .2
         });
         
         function checked() {
             if (checkCell === true) {
-                return 2;
+                return 1;
             } else if (checkCell === false) {
                 return initialHeight;
             }
@@ -80,7 +82,7 @@ for (var i = 0; i < gridSize; i++) {
 }
 
 function clearCanvas() {
-    canvas.width = innerWidth;
+    canvas.width = innerWidth-300;
     canvas.height = innerHeight;
     cellWidth = 1 / (gridSize) * canvas.width+1.5;
     cellHeight = 1 / (gridSize) * canvas.height+1.5;
@@ -93,7 +95,7 @@ function colorGrid() {
             var x = i / (gridSize) * canvas.width + 1.5;
             var y = j / (gridSize) * canvas.height + 1.5;
             color = mf(cell.height * 255);
-            c.fillStyle = colors[color];
+            c.fillStyle = colors[color,color];
             c.fillRect(x, y, (cellWidth + 1.5), (cellHeight + 1.5));
              
         }
@@ -132,7 +134,7 @@ function mouseEs() {
         var j = mf((gridSize) * mouseY / canvas.height);
         var cell = cells[i + j * (gridSize)];
         cell.height =1;
-        cell.velocity = 0;
+        cell.velocity = -0.2;
 
     }
 
@@ -205,7 +207,12 @@ cellHeight = 1 / (gridSize) * canvas.height + .5;
 </script>
 
 <style> 
+#canvas{
 
+margin:25px 25px 25px 25px;
+border:2pxx inset gray;
+box-shadow:1px 2px 15px 2px black;
+}
 
 #auth{
 
