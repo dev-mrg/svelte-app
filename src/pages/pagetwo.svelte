@@ -27,7 +27,7 @@
     var mouseX, mouseY, mouseInteract;
 
     function colors(choice) {
-      let color;
+   
       let inc = 1;
       count += 1;
       let arr = [
@@ -50,8 +50,8 @@
           inc = -inc;
         }
       }
-      //   return arr[choice];
-      return color;
+        return arr[choice];
+      // return color;
     }
 
     function grabcolor(inc) {
@@ -59,7 +59,7 @@
       grd = c.createLinearGradient(rotate * 2, rotate, num * 2, -num);
       grd.addColorStop(0, "rgba(45,45,225,1)");
       grd.addColorStop(0.25, `rgba(0,0,${count2},1)`);
-      grd.addColorStop(0.5, "rgba(0,0,225,1)");
+      grd.addColorStop(0.5, "transparent");
       grd.addColorStop(0.75, "rgba(180,180,225,1)");
       grd.addColorStop(1, `rgba(0,0,${count2},1)`);
       console.log(colors(7));
@@ -92,121 +92,34 @@
     }
 
     function anim() {
+     
       if (interact) {
         requestAnimationFrame(anim);
-        cells();
+        // cells();
         fade();
         angle();
-        c.fillStyle = `rgba(0,0,55,1)`;
-        // c.clearRect(0, 0, canvas.width, canvas.height);
-        // c.fillStyle=grabcolor(num);
-        // c.drawImage(can, 0, 0);
-        // c.fillRect(0, 0, canvas.width, canvas.height);
+        // c.fillStyle = `rgba(0,0,55,1)`;
+        c.clearRect(0, 0, canvas.width, canvas.height);
+        c.fillStyle=grabcolor(num);
+        c.drawImage(can, 0, 0);
+        c.fillRect(0, 0, canvas.width, canvas.height);
       } else {
         c.clearRect(0, 0, canvas.width, canvas.height);
       }
     }
 
-    function clearCanvas() {
-      can.width = innerWidth - 300;
-      can.height = innerHeight;
-    }
-
-    function mouseEs() {
-      if (mouseInteract) {
-        var i = Math.floor((gridSize * mouseX) / can.width);
-        var j = Math.floor((gridSize * mouseY) / can.height);
-      }
-    }
-
-    can.addEventListener("mousedown", function(e) {
-      console.log("mousedown");
-      mouseInteract = true;
-      mouseX = e.offsetX;
-      mouseY = e.offsetY;
-      c.scale(1.2, 1.2);
-      c.fillRect(mouseX, mouseY, mouseX, mouseY);
-    });
-
-    can.addEventListener("mouseup", function(e) {
-      console.log("mouseup");
-      mouseInteract = true;
-      mouseX = e.offsetX;
-      mouseY = e.offsetY;
-      c.scale(0.9, 0.9);
-      c.fillRect(mouseX, mouseY, mouseX, mouseY);
-    });
-
-    //     var c = document.getElementById("myCanvas");
-    // var ctx = c.getContext("2d");
-    // ctx.strokeRect(5, 5, 25, 15);
-    // ctx.scale(2, 2);
-    // ctx.strokeRect(5, 5, 25, 15);
-
     can.addEventListener("mouseover", function(e) {
-      mouseInteract = false;
+   
       interact = true;
       anim();
+      cells();
     });
 
     can.addEventListener("mouseout", function(e) {
       interact = false;
-      c.clearRect(0, 0, canvas.width, canvas.height);
-      c.fillRect(0, 0, canvas.width, canvas.height);
     });
-    let change = [];
+  
 
-    //   function cells(){
-    //         for(let i =0; i < gridsize; i++){
-    //             for(let j = 0; j < gridsize; j++){
-    //                 // grid.push(i);
-    //                 // grid.push(j);
-
-    //             var cell = grid[i + j * gridsize];
-
-    //             var x = i / (gridsize) * can.width ;
-    //             var y = j / (gridsize) * can.height;
-
-    //             c.fillRect(x, y, (cellWidth ), (cellHeight ));
-    //             }
-    //         }
-    //         console.log(grid.length)
-    //     }
-     let cube;
-    let gridx=[];
-    let gridy=[];
-    let gridcount = 0;
-    let gridinc = 1;
-    function cells() {
-      gridcount += gridinc;
-      if (gridcount <= gridsize*5) {
-        cellx += 0.2;
-        celly += 0.2;
-        for (let i = 0; i < cellx; i++) {
-          for (let j = 0; j < celly; j++) {
-            // var cell = grid[i + j * gridsize];
-               gridx.push(x);
-                grid.push(gridx)
-               gridy.push(y);
-                grid.push(gridy)
-            var x = (i / gridsize) * (can.width / 1.8);
-            var y = (j / gridsize) * (can.height / 1.4);
-          cube = {
-               x:x,
-               y:y,
-               width:cellWidth,
-               height:cellHeight
-           };
-            c.fillRect(cube.x,cube.y,cube.width,cube.height);
-      
-          }
-       
-        }
-      if(gridcount>=gridsize*5){
-       cube.x -=1;
-      }
-      }
-    }
   });
 </script>
 

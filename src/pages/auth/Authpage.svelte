@@ -146,7 +146,7 @@ canvas.addEventListener("mousedown", function (e) {
     mouseY = e.offsetY;
 });
 canvas.addEventListener("mousemove", function (e) {
-
+  mouseInteract = true;
     mouseX = e.offsetX;
     mouseY = e.offsetY;
 });
