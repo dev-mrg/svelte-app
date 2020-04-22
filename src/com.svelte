@@ -59,13 +59,13 @@ function tog(){
        
     }
 }
-
+ 
 </style>
 
 
 <div id="dd" class="dd">
 
-<div id="loader"></div>
-<button id="bt"on:click={tog}>Push</button>
 
+<img src="./fucon.png" on:click={tog} alt="img"/> 
+<div id="loader"></div>
 </div>

@@ -13,6 +13,6 @@
 
 <div id="page2" class="page">
 
-  <canvas id="can"></canvas> 
+  <canvas id="can"></canvas>  
 
 </div>
