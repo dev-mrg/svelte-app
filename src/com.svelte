@@ -1,14 +1,14 @@
 
 
 <script>
-export let exp;
+
 import jQuery from 'jquery';
 const j$ = jQuery;
 
 function tog(){
-    j$('.toggle').toggle(500);
+ 
     j$('#loader').toggle(600);
-    console.log('working')
+
 }
 
 </script>
@@ -24,11 +24,11 @@ function tog(){
     height: 7vh;
 }
 
-#exp{
+#dd{
     z-index: 100;
-    position: absolute;
+    /* position: absolute;
     left:40%;
-    top:10%;
+    top:10%; */
 }
 
 #loader {
@@ -63,8 +63,8 @@ function tog(){
 </style>
 
 
-<div id="exp">
-<p class="toggle">{exp}</p>
+<div id="dd" class="dd">
+
 <div id="loader"></div>
 <button id="bt"on:click={tog}>Push</button>
 

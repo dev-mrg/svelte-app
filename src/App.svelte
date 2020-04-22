@@ -47,34 +47,51 @@
     font-size:1.5rem;
     text-decoration: none;
   }
+
+  .container{
+    display:flex;
+    flex-direction:column;
+  }
 </style>
 
 <body>
 <div class="full">
   <div class="navbar">
   <div>
-  <form>
-    <input disabled="true" type="radio" name="loggedin" id="in">log in<br>
-  <input disabled="true" type="radio" name="loggedout" id="out">log out
-  </form>
-  <button on:click={loggedin}>log in </button>
-<button on:click={loggedout}>log out</button>
+
+
   </div>
     <a href="#auth" id="a1" class="tab" on:click={routes}>Auth</a>
     <a href="#page1" id="p1b" class="tab" on:click={routes}>Page1</a>
+    <Com /> 
     <a href="#page2" id="p2b" class="tab" on:click={routes}>Page2</a>
     <a href="#page3" id="p3b" class="tab" on:click={routes}>Page3</a>
+      <form>
+    <div class="container">
+    <div>
+  <button on:click={loggedin}>log in </button>
+    <input disabled="true" type="radio" name="loggedin" id="in">log in
+   
+    </div>
+    <div>
+<button on:click={loggedout}>log out</button>
+   <input disabled="true" type="radio" name="loggedout" id="out">log out
+    </div>
+</div>
+
+  </form>
 
   </div>
 
   <div id="pages">
 <Back/>
   <A1/>
+ 
     <P1 />
     <P2 />
     <P3 />
 
   </div>
-  <Com exp={sometext} />
+  
   </div>
 </body>

@@ -22,27 +22,28 @@ body{
     height: 100vh;
 	background: silver;
 	display:flex;
-	flex-direction:column;
+	flex-direction:column; 
   }
+
+
 .navbar {
-    width: 100vw;
+	width: 100vw;
 	height: 10vh;
 
-    display: flex;
-    background: rgba(55, 55, 55, 1);
-    position: absolute;
-    justify-content: space-around;
-  }
+	display: flex;
+	background: rgba(55, 55, 55, 1);
+	position: absolute;
+	justify-content: space-around;
+}
 
 
 
-.page{
-	width:80vw;
-	min-height:90vh;
-	height:auto;
-	display:none;
+.page { 
+	width: 80vw;
+	min-height: 90vh;
+	height: auto;
+	display: none;
 	justify-content: space-around;
 	z-index: 10;
-	
-} 
 
+}
